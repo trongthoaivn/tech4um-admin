@@ -12,7 +12,7 @@ const users = {
   'admin-token': {
     roles: ['admin'],
     introduction: 'I am a super administrator',
-    avatar: 'https://lh3.googleusercontent.com/ogw/ADea4I5A2spN49DJsD6ulkm-k2VD8HuBR7lZtdDpOYBP9A=s83-c-mo',
+    avatar: 'https://media.discordapp.net/attachments/850986563017113641/930041095096786994/ADea4I5A2spN49DJsD6ulkm-k2VD8HuBR7lZtdDpOYBP9As83-c-mo.png',
     name: 'Quản Trị Viên Cấp Cao'
   },
   'editor-token': {

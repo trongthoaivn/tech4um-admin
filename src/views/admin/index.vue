@@ -1,8 +1,8 @@
 <template>
   <div class="app-container">
-    <!-- Form -->
-    <el-button type="primary" icon="el-icon-circle-plus-outline" round plain @click="newadmin">Tài khoản quản trị mới</el-button>
-
+    <el-row>
+      <el-button type="primary" icon="el-icon-circle-plus-outline" round plain @click="newadmin">Tài khoản quản trị mới</el-button>
+    </el-row>
     <el-dialog title="Tài khoản quản trị mới" :visible.sync="dialogFormVisible">
       <el-form :model="admin">
         <el-form-item label="Tên đầy đủ" :label-width="formLabelWidth">
@@ -145,6 +145,7 @@ export default {
         .then(res => {
           this.list = res
           this.listLoading = false
+          return res
         })
     },
     del(admin_id) {

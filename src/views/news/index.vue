@@ -1,7 +1,8 @@
 <template>
   <div class="app-container">
-    <el-button type="primary" icon="el-icon-circle-plus-outline" round plain @click="newnews">Thêm tin tức mới</el-button>
-
+    <el-row>
+      <el-button type="primary" icon="el-icon-circle-plus-outline" round plain @click="newnews">Thêm tin tức mới</el-button>
+    </el-row>
     <el-dialog title="Thêm tin tức mới" :visible.sync="dialogFormVisible">
       <el-form :model="news">
         <el-form-item label="Mã quản trị" :label-width="formLabelWidth">
