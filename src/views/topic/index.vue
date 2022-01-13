@@ -15,49 +15,49 @@
       </el-table-column>
       <el-table-column label="Mã ID" width="48" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.topic.topic_id }}</span>
+          <span>{{ scope.row.topic_id }}</span>
         </template>
       </el-table-column>
       <el-table-column label="Tiêu đề" width="150" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.topic.title }}</span>
+          <span>{{ scope.row.title }}</span>
         </template>
       </el-table-column>
       <el-table-column label="Nội dung" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.topic.content }}</span>
+          <span>{{ scope.row.content }}</span>
         </template>
       </el-table-column>
       <el-table-column label="Thể loại" width="150" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.topic.category }}</span>
+          <span>{{ scope.row.category }}</span>
         </template>
       </el-table-column>
       <el-table-column label="Mã TV" width="48" align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.topic.user_id }}</span>
+          <span>{{ scope.row.user_id }}</span>
         </template>
       </el-table-column>
       <el-table-column label="Mã TL" width="48" align="center">
         <template slot-scope="scope">
-          {{ scope.row.topic.category_id }}
+          {{ scope.row.category_id }}
         </template>
       </el-table-column>
       <el-table-column align="center" prop="created_at" label="Ngày tạo" width="148">
         <template slot-scope="scope">
           <i class="el-icon-time" />
-          <span>{{ ' ' + format_date(scope.row.topic.created_at) }}</span>
+          <span>{{ ' ' + format_date(scope.row.created_at) }}</span>
         </template>
       </el-table-column>
       <el-table-column align="center" prop="updated_at" label="Ngày sửa" width="148">
         <template slot-scope="scope">
           <i class="el-icon-time" />
-          <span>{{ ' ' + format_date(scope.row.topic.updated_at) }}</span>
+          <span>{{ ' ' + format_date(scope.row.updated_at) }}</span>
         </template>
       </el-table-column>
       <el-table-column label="Sửa" width="61" align="center">
         <template slot-scope="scope">
-          <el-button type="info" icon="el-icon-s-unfold" circle @click="expand(scope.row.topic.topic_id)" />
+          <el-button type="info" icon="el-icon-s-unfold" circle @click="expand(scope.row.topic_id)" />
 
           <el-dialog title="Quản lý bình luận" :visible.sync="dialogTableVisible">
             <el-table
@@ -82,7 +82,7 @@
       </el-table-column>
       <el-table-column label="Xóa" width="61" align="center">
         <template slot-scope="scope">
-          <el-button type="danger" icon="el-icon-delete" circle @click="del(scope.row.topic.topic_id)" />
+          <el-button type="danger" icon="el-icon-delete" circle @click="del(scope.row.topic_id)" />
         </template>
       </el-table-column>
     </el-table>

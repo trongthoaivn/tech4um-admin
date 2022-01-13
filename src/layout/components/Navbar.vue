@@ -16,10 +16,10 @@
               Trang Đầu
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="http://tech4rum.test/home#/">
+          <a target="_blank" href="http://tech4rum.test/home#/home">
             <el-dropdown-item>Trang Chủ</el-dropdown-item>
           </a>
-          <a target="_blank" href="https://github.com/trongthoaivn/tech4rum">
+          <a target="_blank" href="https://github.com/ngthanhhao2000/tech4um-admin">
             <el-dropdown-item>Github</el-dropdown-item>
           </a>
           <el-dropdown-item divided @click.native="logout">

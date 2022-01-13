@@ -33,7 +33,7 @@
           <span>{{ scope.row.password }}</span>
         </template>
       </el-table-column>
-      <el-table-column label="Hình ảnh" width="90" align="center">
+      <el-table-column label="Hình ảnh" width="150" align="center">
         <template slot-scope="scope">
           {{ scope.row.image }}
         </template>
@@ -154,7 +154,6 @@ export default {
       fetch('http://tech4rum.test/api/get-all-user')
         .then(res => res.json())
         .then(res => {
-          console.log(res)
           this.list = res
           this.listLoading = false
         })

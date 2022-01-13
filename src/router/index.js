@@ -93,7 +93,7 @@ export const constantRoutes = [
     component: Layout,
     children: [
       {
-        path: 'http://tech4rum.test/home#/',
+        path: 'http://tech4rum.test/home#/home',
         meta: { title: 'Trang chủ', icon: 'el-icon-s-home' }
       }
     ]

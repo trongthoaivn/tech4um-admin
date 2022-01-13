@@ -198,7 +198,7 @@ export default {
       fetch('http://tech4rum.test/api/get-all-news')
         .then(res => res.json())
         .then(res => {
-          this.list = res
+          this.list = res.res
           this.listLoading = false
         })
     },
